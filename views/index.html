@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="img"></div>
+    <main>  
+      <section id="forecast">
+        <h1>Forecast</h1>
+        <form id="input" action="/api" method="get">
+          <input type="text" name="place" placeholder="Zipcode, City, etc">
+          <select id="drop" name="value">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+          <input class="btn" type="submit" value="Get">
+        </form>
+        <a href="https://www.apixu.com" target="_blank">Weather data by Apixu.com</a><br>
+        <a href="https://www.picjumbo.com" target="_blank">Photo from picjumbo.com</a>
+        <div id="weather2" class="forecast"></div>
+      </section>
+      <section id="current">
+        <h1>Current Weather</h1>
+        <ul id="weather1"></ul>
+      </section>
+      <section id="nearby">
+        <h1>Nearby Areas</h1>
+        <ul id="weather3"></ul>
+      </section>
+    </main>
+    <script src="/client.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+html {
+  height: 100%; 
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  height:100%;
+}
+* {
+  box-sizing: border-box;
+}
+.img {
+  height: 100%;
+  background-image: url("https://picjumbo.com/wp-content/uploads/bench-in-a-park-and-snowy-weather_free_stock_photos_picjumbo_DSC02670-2210x1474.jpg");
+  background-color: #ddd;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+  position: relative;
+}
+img {
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: rgba(0,0,0,.6);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  margin: 20px auto;
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  text-decoration: underline;
+  padding: 0 0 5px 0;
+  margin: 0;
+}
+section {
+  padding-top: 0px;
+  margin-top:10px;
+  float: left;
+  width: 33.33%;
+  height: 100%;
+}
+@media screen and (max-width: 800px) {
+  section:nth-child(even) {
+    background: rgba(250,250,250,.2);
+  }
+}
+@media screen and (max-width: 800px) {
+  section {
+    width: 100%;
+  }
+}
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+  background: lightgray;
+  font-size: 15px;
+}
+input:focus {
+  background: #eee; 
+}
+.forecast {
+  max-height: 450px;
+  overflow: auto;
+}
+.btn {
+  width: 80px; 
+  background: #ccc;
+}
+.btn:hover {
+  background: #eee;
+  cursor: pointer;
+}
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+li {
+  margin-bottom: 30px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+form, header {
+  margin: 0px 0px;
+}
+.day {
+  padding: 1px;
+  border: 1px dotted gray;
+  background: #777
+}
+.day:nth-child(even) {
+  background: #555;
+}
+a {
+  font-size: 12px; 
+  margin-bottom: 10px;
+  color: cyan;
+}
+a:hover {
+  color: lightcyan;
+}
